@@ -1,18 +1,14 @@
-# Authors
-
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+neil:
+  name        : "Neil Frye"
+  avatar      : "neil.JPG"
+  bio         : "Technology Professional | AI & Data Analytics Specialist"
+  location    : "United States"
+  github      : "Neil-Frye"
+  linkedin    : "neilfrye"
+  endorsements:
+    - quote: "Neil is a highly skilled professional who brings a unique blend of technical expertise and business acumen to every project. His ability to understand complex business problems and translate them into actionable technical solutions is remarkable."
+      author: "Senior Technology Leader"
+    - quote: "Working with Neil was a game-changer for our organization. His deep understanding of AI and data analytics, combined with his excellent communication skills, helped us achieve our strategic goals."
+      author: "Business Executive"
+    - quote: "Neil's expertise in implementing AI solutions and his methodical approach to problem-solving made him an invaluable asset to our team. His work consistently exceeded expectations."
+      author: "Project Manager"

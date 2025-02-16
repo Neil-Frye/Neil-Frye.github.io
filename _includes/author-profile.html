@@ -158,4 +158,20 @@
       {% endif %}      
     </ul>
   </div>
+
+  {% if author.endorsements %}
+  <div class="author__endorsements">
+    <h4 class="endorsements__title">Endorsements</h4>
+    <div class="endorsements__carousel">
+      {% for endorsement in author.endorsements %}
+        <div class="endorsement">
+          <blockquote class="endorsement__quote">
+            "{{ endorsement.quote }}"
+          </blockquote>
+          <p class="endorsement__author">- {{ endorsement.author }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </div>

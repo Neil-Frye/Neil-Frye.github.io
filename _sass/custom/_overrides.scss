@@ -1,0 +1,90 @@
+/* Endorsements styling */
+.author__endorsements {
+  margin-top: 2em;
+  padding: 1.5em;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+}
+
+.endorsements__title {
+  color: #2c3e50;
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.endorsements__carousel {
+  .endorsement {
+    margin-bottom: 2em;
+    padding: 0.5em;
+    transition: transform 0.3s ease;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.endorsement__quote {
+  font-style: italic;
+  color: #495057;
+  margin: 0 0 1em 0;
+  padding: 1em 1.5em;
+  border-left: 4px solid #007bff;
+  background: #f8f9fa;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+  position: relative;
+  
+  &::before {
+    content: '"';
+    font-size: 2em;
+    color: #007bff;
+    position: absolute;
+    left: 0.3em;
+    top: 0.2em;
+    opacity: 0.4;
+  }
+}
+
+.endorsement__author {
+  text-align: right;
+  color: #6c757d;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0;
+  padding-right: 1.5em;
+  
+  &::before {
+    content: '—';
+    margin-right: 0.5em;
+    color: #adb5bd;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .author__endorsements {
+    margin-top: 1.5em;
+    padding: 1em;
+  }
+  
+  .endorsement__quote {
+    font-size: 0.9em;
+    padding: 0.8em 1.2em;
+  }
+  
+  .endorsement__author {
+    font-size: 0.85em;
+  }
+}
