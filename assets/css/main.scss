@@ -1,6 +1,4 @@
----
-# Note: front matter required so Jekyll processes this file for SASS
----
+@import "theme/_default";
 
 /*!
   main.scss
@@ -12,13 +10,12 @@
 /* 1. Load default theme variables and global partials */
 
 // Load the default theme settings first
-@import "theme/default";
-
 // Utility mixins and shared partials
 @import "include/mixins";
 @import "include/utilities";
 @import "vendor/breakpoint/breakpoint";
 @import "vendor/font-awesome/fontawesome";  /* Font Awesome core */
+@import "_themes";
 @import "vendor/font-awesome/solid";        /* Solid icons */
 @import "vendor/font-awesome/regular";      /* Regular icons */
 @import "vendor/font-awesome/brands";       /* Brand icons */
@@ -63,7 +60,12 @@ body {
 
 /* Masthead: bigger, cleaner, pinned with minimal lines */
 .masthead {
-  background: #ffffff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-bottom: 1px solid #e2e2e2;
 
   &__inner-wrap {
@@ -121,7 +123,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Increase the hero image size & presence (when overlay is used) */
 .page__hero--overlay {
-  padding: 4em 0;
+  min-height: 20vh !important;
+  padding: 2em 0;
   h1.page__title {
     font-size: 2.2em;
   }
@@ -183,6 +186,76 @@ table {
   }
   thead {
     background-color: #f2f2f2;
+  }
+}
+
+/* Hero Section */
+.hero-short {
+  min-height: 25vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+    url("/images/backdrop.webp") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-short .hero-content {
+  padding: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Two Column Layout */
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.main-left {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.endorsements-column {
+  flex: 1 1 35%;
+  min-width: 280px;
+}
+
+.endorsements__carousel {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.endorsement {
+  margin-bottom: 1.5rem;
+  blockquote {
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+  }
+  .endorsement__author {
+    text-align: right;
+    font-size: 0.9em;
+    color: #555;
+  }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column;
+  }
+  .main-left, .endorsements-column {
+    flex: auto;
+    width: 100%;
+    min-width: auto;
   }
 }
 

@@ -35,6 +35,14 @@
         {% else %}
           {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
+        <span class="hero-icons">
+          <a href="https://github.com/Neil-Frye" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/neilfrye" target="_blank" aria-label="LinkedIn" style="margin-left:1rem;">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </span>
       </h1>
       {% if page.excerpt %}
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
