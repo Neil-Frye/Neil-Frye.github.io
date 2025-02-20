@@ -45,7 +45,7 @@ redirect_from:
 <div class="content-row">
   <!-- Left Column -->
   <div class="main-left">
-    <p>My name is Neil Frye, and I'm a technology leader with a true passion for building things in tech. I have a wonderful family, and when I'm not working, I love to snowboard and golf.</p>
+    <p>I’m Neil Frye, a technology leader with a passion for transforming big ideas into practical, impactful solutions. I specialize in professional services, AI, and data analytics—helping businesses harness innovation to achieve real results. When I’m away from the office, you’ll often find me on the slopes snowboarding, out on the golf course, or spending quality time with my family.</p>
 
     <h3>Areas of Expertise</h3>
     <ul>
