@@ -95,7 +95,7 @@ redirect_from:
 </div><!-- /.content-row -->
 
 <script>
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
   const items = document.querySelectorAll('#endorsementCarousel .endorsement');
   let current = 0;
   
@@ -113,5 +113,5 @@ redirect_from:
 
   // initial
   showItem(current);
-})();
+});
 </script>
