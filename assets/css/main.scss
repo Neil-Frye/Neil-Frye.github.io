@@ -200,6 +200,19 @@ table {
   justify-content: center;
   color: #fff;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.hero-short .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .hero-short .hero-content {
@@ -256,6 +269,110 @@ table {
     flex: auto;
     width: 100%;
     min-width: auto;
+  }
+}
+
+/* Slick Carousel Styles */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.slick-slide {
+  height: auto;
+  min-height: 1px;
+  padding: 0 15px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  li {
+    margin: 0 5px;
+    
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background: #ccc;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    &.slick-active button {
+      background: #007aff;
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  &::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #333;
+    font-size: 20px;
+  }
+}
+
+.slick-prev {
+  left: -50px;
+  
+  &::before {
+    content: '\f104';
+  }
+}
+
+.slick-next {
+  right: -50px;
+  
+  &::before {
+    content: '\f105';
   }
 }
 

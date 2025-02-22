@@ -1,11 +1,25 @@
 ---
 layout: default
-title: "Publications"
+title: "Articles"
 permalink: /publications/
 author_profile: false
 ---
 
-## Publications
+## Articles
+
+### **The Impact of Context Switching on Employee Utilization**
+Context switching between tasks can significantly impact productivity and employee utilization. This article examines the cognitive costs of task switching and provides strategies for minimizing its negative effects in professional services organizations.
+
+[Show More](/files/The%20Impact%20of%20Context%20Switching%20on%20Employee%20Utilization.pdf){: .btn .btn--small}
+
+---
+
+### **AI Redefines Risk Management**
+Artificial Intelligence is transforming risk management practices across industries. This article explores how AI-powered risk assessment tools are enabling more proactive and predictive approaches to identifying and mitigating risks in complex business environments.
+
+[Show More](/files/AI%20Redefines%20Risk%20Management.pdf){: .btn .btn--small}
+
+---
 
 ### **Artificial Intelligence Transforming Data Analytics and Business Intelligence**
 AI is revolutionizing the way data analytics is conducted by introducing automation, advanced statistical models, and real-time insights. In this article, we explore how AI-driven analytics platforms reduce manual intervention while improving accuracy, helping businesses make data-driven decisions faster than ever.
