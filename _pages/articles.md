@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Articles"
-permalink: /publications/
+permalink: /articles/
 author_profile: false
 ---
 
