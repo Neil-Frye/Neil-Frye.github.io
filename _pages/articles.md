@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: "Articles"
 permalink: /articles/
 author_profile: false
