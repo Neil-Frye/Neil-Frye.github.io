@@ -17,7 +17,6 @@ redirect_from:
     </div>
     <div style="display: flex; flex-direction: column; gap: 1rem;">
       <div class="hero-title-row">
-        <h1 class="page__title">About Me</h1>
         <div class="hero-icons">
           <a href="https://github.com/Neil-Frye" target="_blank" aria-label="GitHub">
             <i class="fab fa-github fa-lg"></i>
@@ -47,14 +46,58 @@ redirect_from:
   <div class="main-left">
     <p>I’m Neil Frye, a technology leader with a passion for transforming big ideas into practical, impactful solutions. I specialize in professional services, AI, and data analytics—helping businesses harness innovation to achieve real results. When I’m away from the office, you’ll often find me on the slopes snowboarding, out on the golf course, or spending quality time with my family.</p>
 
-    <h3>Areas of Expertise</h3>
-    <ul>
-      <li>Artificial Intelligence</li>
-      <li>Data Analytics & Business Intelligence</li>
-      <li>Technology Consulting</li>
-      <li>Professional Services</li>
-      <li>Digital Transformation</li>
-    </ul>
+    <div class="two-column-layout" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
+      <!-- Left Column: Areas of Expertise -->
+      <div style="flex: 1;">
+        <h3>Areas of Expertise</h3>
+        <ul>
+          <li>Artificial Intelligence</li>
+          <li>Data Analytics & Business Intelligence</li>
+          <li>Technology Consulting</li>
+          <li>Professional Services</li>
+          <li>Digital Transformation</li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Where I've Worked -->
+      <div style="flex: 1;">
+        <h3>Where I’ve Worked</h3>
+        <p>Some companies I've had the privilege of working with:</p>
+
+        <!-- Two rows of icons -->
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+          <!-- Row 1 -->
+          <div style="display: flex; gap: 1rem; width: 100%;">
+            <div style="flex: 1; text-align: center;">
+              <img src="/images/stripe (50x50).png" alt="Stripe Logo" style="max-width: 50px;">
+              <p style="font-size: 0.8em; margin-top: 0.5em;">Stripe</p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <img src="/images/kantata 50x50.png" alt="Kantata Logo" style="max-width: 50px;">
+              <p style="font-size: 0.8em; margin-top: 0.5em;">Kantata</p>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div style="display: flex; gap: 1rem; width: 100%;">
+            <div style="flex: 1; text-align: center;">
+              <img src="/images/mavenlink (50x50).jpg" alt="Mavenlink Logo" style="max-width: 50px;">
+              <p style="font-size: 0.8em; margin-top: 0.5em;">Mavenlink</p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <img src="/images/parker (50x50).png" alt="Parker Logo" style="max-width: 50px;">
+              <p style="font-size: 0.8em; margin-top: 0.5em;">Parker Aerospace</p>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div style="display: flex; gap: 1rem; width: 100%;">
+            <div style="flex: 1; text-align: center;">
+              <img src="/images/APD (50x50).png" alt="Anaheim Police Dept Logo" style="max-width: 50px;">
+              <p style="font-size: 0.8em; margin-top: 0.5em;">Anaheim Police Dept.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <h3>Recent Articals</h3>
     <ul>
@@ -79,7 +122,7 @@ redirect_from:
         <p class="endorsement__author">- Ryan Tinklenberg, Business Intelligence Analyst</p>
       </div>
       <div class="endorsement">
-        <blockquote>"I have had the privilege of working closely with Neil Frye since July 2024, during which time I have consistently been impressed by his exceptional strategic insight, operational expertise, and leadership skills. As a Strategy & Ops Lead at Stripe, Neil has demonstrated an extraordinary ability to drive impactful results across multiple domains, including professional services, analytics, and operational efficiency. Neil’s ability to think critically and analyze complex business problems sets him apart. He has a rare blend of strategic vision and hands-on operational expertise, which allows him to not only identify opportunities for improvement but also implement solutions that deliver measurable outcomes. Whether working on large-scale strategic initiatives or fine-tuning day-to-day operational processes, Neil approaches every challenge with a thoughtful, data-driven mindset and a relentless focus on results. One of Neil's most notable strengths is his leadership. He has an innate ability to inspire and guide teams through periods of change and complexity. His collaborative style fosters a culture of trust, where team members feel supported and empowered to perform at their best. Neil consistently communicates with clarity and confidence, ensuring that everyone involved in a project is aligned and working toward the same goals. He is also a mentor and a coach, always willing to share his knowledge and experience to help others grow professionally. In addition to his leadership and operational skills, Neil is an exceptional communicator, able to distill complex data and insights into actionable recommendations for both technical and non-technical stakeholders. His ability to bridge the gap between analytics and strategy has made him an invaluable asset to the team. Working alongside Neil has been both rewarding and inspiring. His combination of deep expertise, leadership acumen, and commitment to excellence has had a significant impact on the success of our projects, and I am confident that he will continue to achieve great things in his career. I highly recommend Neil Frye for any role that requires strategic leadership, operational expertise, and a focus on delivering results. He is an outstanding professional, and any team would be lucky to have him."</blockquote>
+        <blockquote>"I have had the privilege of working closely with Neil Frye since July 2024, during which time I have consistently been impressed by his exceptional strategic insight, operational expertise, and leadership skills. As a Strategy & Oops Lead at Stripe, Neil has demonstrated an extraordinary ability to drive impactful results across multiple domains, including professional services, analytics, and operational efficiency. Neil’s ability to think critically and analyze complex business problems sets him apart. He has a rare blend of strategic vision and hands-on operational expertise, which allows him to not only identify opportunities for improvement but also implement solutions that deliver measurable outcomes. Whether working on large-scale strategic initiatives or fine-tuning day-to-day operational processes, Neil approaches every challenge with a thoughtful, data-driven mindset and a relentless focus on results. One of Neil's most notable strengths is his leadership. He has an innate ability to inspire and guide teams through periods of change and complexity. His collaborative style fosters a culture of trust, where team members feel supported and empowered to perform at their best. Neil consistently communicates with clarity and confidence, ensuring that everyone involved in a project is aligned and working toward the same goals. He is also a mentor and a coach, always willing to share his knowledge and experience to help others grow professionally. In addition to his leadership and operational skills, Neil is an exceptional communicator, able to distill complex data and insights into actionable recommendations for both technical and non-technical stakeholders. His ability to bridge the gap between analytics and strategy has made him an invaluable asset to the team. Working alongside Neil has been both rewarding and inspiring. His combination of deep expertise, leadership acumen, and commitment to excellence has had a significant impact on the success of our projects, and I am confident that he will continue to achieve great things in his career. I highly recommend Neil Frye for any role that requires strategic leadership, operational expertise, and a focus on delivering results. He is an outstanding professional, and any team would be lucky to have him."</blockquote>
         <p class="endorsement__author">- Toby M. Ellis, ITIL, RMCP, Resource Manager</p>
       </div>
       <div class="endorsement">
