@@ -1,11 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Glide Carousel
-    new Glide('.endorsements__carousel', {
-        type: 'carousel',
-        perView: 1,
-        focusAt: 'center',
-        gap: 0,
-        autoplay: 3000,
-        hoverpause: true
-    }).mount();
+    // Initialize Swiper Carousel
+    new Swiper('.endorsements__carousel', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });

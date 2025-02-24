@@ -28,7 +28,7 @@
     "jquery": "^3.7.1",
     "jquery-smooth-scroll": "^2.2.0",
     "magnific-popup": "^1.2.0",
-    "@glidejs/glide": "^3.6.0"
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "onchange": "^7.1.0",
