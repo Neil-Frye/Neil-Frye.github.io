@@ -112,10 +112,9 @@ redirect_from:
   <!-- Right Column (Endorsements / Carousel) -->
   <div class="endorsements-column">
     <h3>Endorsements</h3>
-    <div class="endorsements__carousel" id="endorsementCarousel">
-      <button class="carousel__arrow carousel__arrow--prev" aria-label="Previous endorsement">&#10094;</button>
-      <div class="carousel__track">
-        <div class="endorsement">
+    <div class="swiper endorsements__carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide endorsement">
           <blockquote>"I had the pleasure of being Neil's manager for 5 years as he led the Business Intelligence & Analytics team at Mavenlink and, subsequently, Kantata. Neil was not only highly skilled in the tactical aspects of his role, delivering solutions to complex business requirements, but he also demonstrated his strategic mindset by consistently driving the team forward with new offerings and capabilities. Neil is a superlative manager of people. He connects with his team members fostering trust not only in his relationships but in the relationships within the team. He is adept at balancing the needs of those he manages with the needs of the company. At Mavenlink and Kantata, Neil oversaw a period of accelerated growth and did so with a high rate of employee retention. He was called upon, during the merger that resulted in the creation of Kantata, to create a new set of offerings for a completely new product line, and the result not only provided new client capabilities but also new revenue streams. Neil was a leader who I trusted and relied upon to help grow our business and serve our clients, and I would strongly recommend him as a leader in Professional Services."</blockquote>
           <p class="endorsement__author">- John Rooff, Technology Leader</p>
         </div>
@@ -136,63 +135,11 @@ redirect_from:
           <p class="endorsement__author">- Andrew Hellquist, Senior Manager, Professional Services</p>
         </div>
       </div>
-      <button class="carousel__arrow carousel__arrow--next" aria-label="Next endorsement">&#10095;</button>
+      <!-- Add navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Add pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.querySelector('#endorsementCarousel');
-        const track = carousel.querySelector('.carousel__track');
-        const items = Array.from(track.querySelectorAll('.endorsement'));
-        const prevBtn = carousel.querySelector('.carousel__arrow--prev');
-        const nextBtn = carousel.querySelector('.carousel__arrow--next');
-        let currentIndex = 0;
-        
-        function updateCarousel() {
-          const itemWidth = items[0].offsetWidth;
-          track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-          prevBtn.disabled = currentIndex === 0;
-          nextBtn.disabled = currentIndex === items.length - 1;
-        }
-        
-        prevBtn.addEventListener('click', function() {
-          if (currentIndex > 0) {
-            currentIndex--;
-            updateCarousel();
-          }
-        });
-        
-        nextBtn.addEventListener('click', function() {
-          if (currentIndex < items.length - 1) {
-            currentIndex++;
-            updateCarousel();
-          }
-        });
-        
-        // Initialize
-        updateCarousel();
-      });
-    </script>
   </div><!-- /.endorsements-column -->
 </div><!-- /.content-row -->
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const items = document.querySelectorAll('#endorsementCarousel .endorsement');
-  let current = 0;
-  
-  function showItem(index) {
-    items.forEach((el, i) => {
-      el.style.display = (i === index) ? 'block' : 'none';
-    });
-  }
-  
-  // rotate every 12.5s
-  setInterval(() => {
-    current = (current + 1) % items.length;
-    showItem(current);
-  }, 12500);
-
-  // initial
-  showItem(current);
-});
-</script>
