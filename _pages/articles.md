@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: single
 title: "Articles"
 permalink: /articles/
 author_profile: false
 ---
+
+<div class="articles-container">
 
 ## Articles
 
@@ -39,3 +41,4 @@ In the fast-paced world of SaaS and tech consulting, AI agents have become a cri
 For SaaS companies offering professional services, balancing revenue with cost can be challenging. We break down strategies for optimizing resource allocation, pricing engagements properly, and leveraging technology to scale PS teams. Whether you're a startup or established enterprise, this guide helps map the path to profitability.
 
 [Show More](/files/Achieving%20Break-Even%20or%20Profitability%20in%20SaaS%20Professional%20Services.pdf){: .btn .btn--small}
+</div>
