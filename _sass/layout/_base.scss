@@ -356,3 +356,32 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
+
+/* Swiper navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  display: inline-block;
+  margin: 1em 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.endorsements__carousel {
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px;
+}
