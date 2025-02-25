@@ -10,33 +10,46 @@ redirect_from:
   - /about.html
 ---
 
-<div class="hero-short">
-  <div class="hero-content" style="display: flex; align-items: center; gap: 2rem; padding: 1rem 0;">
-    <div>
-      <img src="/images/neil.JPG" alt="Neil Frye" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 1rem;">
-      <div class="hero-title-row">
-        <div class="hero-icons">
-          <a href="https://github.com/Neil-Frye" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github fa-lg"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/neilfrye" target="_blank" aria-label="LinkedIn" style="margin-left: 1rem;">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </a>
-        </div>
-      </div>
-      <div class="hero-subtitle">
-        Technology & Professional Services | AI & Data Analytics Specialist
-      </div>
-      <div class="social-icons" style="margin-top: 10px;">
-        <a href="https://github.com/Neil-Frye" target="_blank" style="margin-right: 1rem;">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/neilfrye" target="_blank" style="margin-right: 1rem;">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-      </div>
+<div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
+  <!-- Profile Image -->
+  <img 
+    src="/images/neil.JPG" 
+    alt="Neil Frye" 
+    style="
+      border-radius: 50%; 
+      width: 120px; 
+      height: 120px; 
+      object-fit: cover;
+    "
+  />
+
+  <!-- Text/Links Column -->
+  <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+    <h2 style="margin: 0;">Neil Frye</h2>
+    <p style="margin: 0; font-size: 1.1rem;">
+      Technology & Professional Services | AI & Data Analytics Specialist
+    </p>
+    
+    <!-- Social Icons Row -->
+    <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+      <!-- GitHub Icon/Link -->
+      <a href="https://github.com/Neil-Frye" target="_blank" aria-label="GitHub">
+        <img 
+          src="/images/github%20(32x32).png" 
+          alt="GitHub" 
+          width="32" 
+          height="32"
+        />
+      </a>
+      <!-- LinkedIn Icon/Link -->
+      <a href="https://www.linkedin.com/in/neilfrye" target="_blank" aria-label="LinkedIn">
+        <img 
+          src="/images/linkedin%20(32x32).png" 
+          alt="LinkedIn" 
+          width="32" 
+          height="32"
+        />
+      </a>
     </div>
   </div>
 </div>
