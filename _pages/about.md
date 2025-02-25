@@ -50,6 +50,15 @@ redirect_from:
           height="32"
         />
       </a>
+      <!-- Email Icon/Link -->
+      <a href="mailto:neilfrye1@gmail.com" aria-label="Email">
+        <img 
+          src="/images/email.svg" 
+          alt="Email" 
+          width="32" 
+          height="32"
+        />
+      </a>
     </div>
   </div>
 </div>
