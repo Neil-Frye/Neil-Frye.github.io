@@ -1,11 +1,22 @@
-.articles-container {
-  background-color: #fff;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 6px;
+/* --- Career Timeline --- */
+.career-timeline {
+  width: 100%;
+  margin: 3rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-body .articles-container {
-  background-color: #fff !important;
+.timeline-svg {
+  width: 100%;
+  min-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .career-timeline {
+    padding-bottom: 1rem;
+  }
 }

@@ -68,58 +68,11 @@ redirect_from:
   <div class="main-left">
     <p>I’m Neil Frye, a technology leader with a passion for transforming big ideas into practical, impactful solutions. I specialize in professional services, AI, and data analytics—helping businesses harness innovation to achieve real results. When I’m away from the office, you’ll often find me on the slopes snowboarding, out on the golf course, or spending quality time with my family.</p>
 
-    <div class="two-column-layout" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
-      <!-- Left Column: Areas of Expertise -->
-      <div style="flex: 1;">
-        <h3>Areas of Expertise</h3>
-        <ul>
-          <li>Artificial Intelligence</li>
-          <li>Data Analytics & Business Intelligence</li>
-          <li>Technology Consulting</li>
-          <li>Professional Services</li>
-          <li>Digital Transformation</li>
-        </ul>
-      </div>
-
-      <!-- Right Column: Where I've Worked -->
-      <div style="flex: 1;">
-        <h3>Where I’ve Worked</h3>
-        <p>Some companies I've had the privilege of working with:</p>
-
-        <!-- Two rows of icons -->
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-          <!-- Row 1 -->
-          <div style="display: flex; gap: 1rem; width: 100%;">
-            <div style="flex: 1; text-align: center;">
-              <img src="/images/stripe (50x50).png" alt="Stripe Logo" style="max-width: 50px;">
-              <p style="font-size: 0.8em; margin-top: 0.5em;">Stripe</p>
-            </div>
-            <div style="flex: 1; text-align: center;">
-              <img src="/images/kantata 50x50.png" alt="Kantata Logo" style="max-width: 50px;">
-              <p style="font-size: 0.8em; margin-top: 0.5em;">Kantata</p>
-            </div>
-          </div>
-          <!-- Row 2 -->
-          <div style="display: flex; gap: 1rem; width: 100%;">
-            <div style="flex: 1; text-align: center;">
-              <img src="/images/mavenlink (50x50).jpg" alt="Mavenlink Logo" style="max-width: 50px;">
-              <p style="font-size: 0.8em; margin-top: 0.5em;">Mavenlink</p>
-            </div>
-            <div style="flex: 1; text-align: center;">
-              <img src="/images/parker (50x50).png" alt="Parker Logo" style="max-width: 50px;">
-              <p style="font-size: 0.8em; margin-top: 0.5em;">Parker Aerospace</p>
-            </div>
-          </div>
-          <!-- Row 3 -->
-          <div style="display: flex; gap: 1rem; width: 100%;">
-            <div style="flex: 1; text-align: center;">
-              <img src="/images/APD (50x50).png" alt="Anaheim Police Dept Logo" style="max-width: 50px;">
-              <p style="font-size: 0.8em; margin-top: 0.5em;">Anaheim Police Dept.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- HORIZONTAL TIMELINE START -->
+    <div class="career-timeline">
+      <img src="/assets/images/timeline.svg" alt="Career Timeline showing past workplaces: Stripe, Kantata, Mavenlink, Parker Aerospace, and Anaheim Police Department" class="timeline-svg" />
     </div>
+    <!-- HORIZONTAL TIMELINE END -->
 
     <h3>Recent Articals</h3>
     <ul>
