@@ -35,7 +35,7 @@ redirect_from:
       <!-- GitHub Icon/Link -->
       <a href="https://github.com/Neil-Frye" target="_blank" aria-label="GitHub">
         <img 
-          src="/images/github%20(32x32).png" 
+          src="/images/github.svg" 
           alt="GitHub" 
           width="32" 
           height="32"
