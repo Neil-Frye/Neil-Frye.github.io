@@ -4,19 +4,72 @@
   margin: 3rem 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  position: relative;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* For Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers */
+.career-timeline::-webkit-scrollbar {
+  height: 6px;
+}
+
+.career-timeline::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.career-timeline::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 
 .timeline-svg {
   width: 100%;
-  min-width: 800px;
+  min-width: 800px; /* Ensures minimum width for scrolling on small screens */
+  max-width: 1200px; /* Prevents the timeline from becoming too large on wide screens */
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
+.timeline-description {
+  white-space: normal; /* Ensure text can wrap onto multiple lines */
+  overflow-wrap: break-word; /* Break words to prevent overflow */
+  word-wrap: break-word; /* Legacy support */
+}
+
 /* Responsive Styles */
+@media (max-width: 992px) {
+  .career-timeline {
+    margin: 2rem 0;
+  }
+  
+  .timeline-svg {
+    padding: 0 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .career-timeline {
     padding-bottom: 1rem;
+    /* Enable horizontal scrolling on smaller screens */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
+  
+  /* Ensure the timeline is visible on mobile with proper scrolling */
+  .timeline-svg {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-timeline {
+    margin: 1.5rem 0;
+  }
+}
+
+/* Ensure icons are properly centered and visible */
+.timeline-svg image {
+  transform-origin: center;
 }

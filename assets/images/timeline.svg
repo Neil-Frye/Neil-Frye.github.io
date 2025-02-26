@@ -1,9 +1,12 @@
-<svg version="1.1" id="timeline-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="background: transparent; width: 100%; height: auto;">
+<svg version="1.1" id="timeline-left-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 450" style="background: transparent; width: 100%; height: auto;">
   <!-- Define a left-pointing arrow marker -->
   <defs>
     <marker id="arrowLeft" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
       <path d="M10,0 L0,5 L10,10 Z" fill="#999" />
     </marker>
+    <clipPath id="circleClip">
+      <circle cx="25" cy="25" r="25" />
+    </clipPath>
     <style>
       .timeline-text {
         font-family: 'Helvetica', Arial, sans-serif;
@@ -21,73 +24,95 @@
         rx: 6;
         ry: 6;
       }
-      @media (max-width: 600px) {
+      .timeline-section-title {
+        font-family: 'Helvetica', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        fill: #333;
+        text-anchor: middle;
+      }
+      /* Media queries for responsive text sizing */
+      @media (max-width: 768px) {
         .timeline-text { font-size: 10px; }
         .timeline-title { font-size: 12px; }
+        .timeline-section-title { font-size: 16px; }
+      }
+      @media (max-width: 480px) {
+        .timeline-text { font-size: 9px; }
+        .timeline-title { font-size: 11px; }
+        .timeline-section-title { font-size: 14px; }
       }
     </style>
   </defs>
 
+  <!-- Section Title -->
+  <text x="450" y="30" class="timeline-section-title">Professional Experience</text>
+
   <!-- Main timeline line with arrow at the start (left) -->
-  <line x1="100" y1="150" x2="700" y2="150" stroke="#999" stroke-width="3" stroke-linecap="round" marker-start="url(#arrowLeft)" />
+  <line x1="100" y1="170" x2="800" y2="170" stroke="#999" stroke-width="3" stroke-linecap="round" marker-start="url(#arrowLeft)" />
 
   <!-- 1) Downward stem - Stripe -->
-  <circle cx="170" cy="150" r="5" fill="#999" />
-  <line x1="170" y1="150" x2="170" y2="180" stroke="#999" stroke-width="3" stroke-linecap="round" />
-  <circle cx="170" cy="180" r="25" fill="#f8f9fa" stroke="#ddd" stroke-width="1" />
-  <image href="/images/stripe (50x50).png" x="145" y="155" width="50" height="50" />
+  <circle cx="170" cy="170" r="5" fill="#999" />
+  <line x1="170" y1="170" x2="170" y2="200" stroke="#999" stroke-width="3" stroke-linecap="round" />
+  <image x="145" y="175" width="50" height="50" xlink:href="../../images/stripe-50x50.png" clip-path="url(#circleClip)" />
   
-  <!-- Stripe text box -->
-  <rect x="100" y="220" width="200" height="70" class="timeline-box" />
-  <text x="110" y="240" class="timeline-text timeline-title">Stripe</text>
-  <text x="110" y="260" class="timeline-text">Enhanced reporting accuracy by 50%,</text>
-  <text x="110" y="275" class="timeline-text">saving over 100 hours weekly.</text>
+  <!-- Stripe text box - Increased height -->
+  <rect x="100" y="240" width="200" height="110" class="timeline-box" />
+  <text x="110" y="260" class="timeline-text timeline-title">Stripe (2024-2025)</text>
+  <text x="110" y="280" class="timeline-text">
+    <tspan x="110" dy="0">Enhanced reporting accuracy by 50%,</tspan>
+    <tspan x="110" dy="15">saving over 100 hours weekly.</tspan>
+  </text>
 
   <!-- 2) Upward stem - Kantata -->
-  <circle cx="310" cy="150" r="5" fill="#999" />
-  <line x1="310" y1="150" x2="310" y2="120" stroke="#999" stroke-width="3" stroke-linecap="round" />
-  <circle cx="310" cy="120" r="25" fill="#f8f9fa" stroke="#ddd" stroke-width="1" />
-  <image href="/images/kantata 50x50.png" x="285" y="95" width="50" height="50" />
+  <circle cx="310" cy="170" r="5" fill="#999" />
+  <line x1="310" y1="170" x2="310" y2="140" stroke="#999" stroke-width="3" stroke-linecap="round" />
+  <image x="285" y="115" width="50" height="50" xlink:href="../../images/kantata-50x50.png" clip-path="url(#circleClip)" />
   
-  <!-- Kantata text box -->
-  <rect x="240" y="40" width="200" height="70" class="timeline-box" />
-  <text x="250" y="60" class="timeline-text timeline-title">Kantata</text>
-  <text x="250" y="80" class="timeline-text">Drove analytics platform strategy for</text>
-  <text x="250" y="95" class="timeline-text">2,500+ global clients.</text>
+  <!-- Kantata text box - Increased height -->
+  <rect x="240" y="40" width="200" height="90" class="timeline-box" />
+  <text x="250" y="60" class="timeline-text timeline-title">Kantata (2022-2024)</text>
+  <text x="250" y="80" class="timeline-text">
+    <tspan x="250" dy="0">Drove analytics platform strategy for</tspan>
+    <tspan x="250" dy="15">2,500+ global clients.</tspan>
+  </text>
 
   <!-- 3) Downward stem - Mavenlink -->
-  <circle cx="450" cy="150" r="5" fill="#999" />
-  <line x1="450" y1="150" x2="450" y2="180" stroke="#999" stroke-width="3" stroke-linecap="round" />
-  <circle cx="450" cy="180" r="25" fill="#f8f9fa" stroke="#ddd" stroke-width="1" />
-  <image href="/images/mavenlink (50x50).jpg" x="425" y="155" width="50" height="50" />
+  <circle cx="450" cy="170" r="5" fill="#999" />
+  <line x1="450" y1="170" x2="450" y2="200" stroke="#999" stroke-width="3" stroke-linecap="round" />
+  <image x="425" y="175" width="50" height="50" xlink:href="../../images/mavenlink-50x50.jpg" clip-path="url(#circleClip)" />
   
-  <!-- Mavenlink text box -->
-  <rect x="380" y="220" width="200" height="70" class="timeline-box" />
-  <text x="390" y="240" class="timeline-text timeline-title">Mavenlink</text>
-  <text x="390" y="260" class="timeline-text">Scaled revenue from $10M to $100M+</text>
-  <text x="390" y="275" class="timeline-text">in ARR, expanding services team.</text>
+  <!-- Mavenlink text box - Increased height -->
+  <rect x="380" y="240" width="200" height="110" class="timeline-box" />
+  <text x="390" y="260" class="timeline-text timeline-title">Mavenlink (2016-2022)</text>
+  <text x="390" y="280" class="timeline-text">
+    <tspan x="390" dy="0">Scaled revenue from $10M to $100M+</tspan>
+    <tspan x="390" dy="15">in ARR, expanding services team.</tspan>
+  </text>
 
   <!-- 4) Upward stem - Parker Aerospace -->
-  <circle cx="590" cy="150" r="5" fill="#999" />
-  <line x1="590" y1="150" x2="590" y2="120" stroke="#999" stroke-width="3" stroke-linecap="round" />
-  <circle cx="590" cy="120" r="25" fill="#f8f9fa" stroke="#ddd" stroke-width="1" />
-  <image href="/images/parker (50x50).png" x="565" y="95" width="50" height="50" />
+  <circle cx="590" cy="170" r="5" fill="#999" />
+  <line x1="590" y1="170" x2="590" y2="140" stroke="#999" stroke-width="3" stroke-linecap="round" />
+  <image x="565" y="115" width="50" height="50" xlink:href="../../images/parker-50x50.png" clip-path="url(#circleClip)" />
   
-  <!-- Parker text box -->
-  <rect x="520" y="40" width="200" height="70" class="timeline-box" />
-  <text x="530" y="60" class="timeline-text timeline-title">Parker Aerospace</text>
-  <text x="530" y="80" class="timeline-text">Led enterprise data harmonization</text>
-  <text x="530" y="95" class="timeline-text">initiatives, improving consistency.</text>
+  <!-- Parker text box - Increased height -->
+  <rect x="520" y="40" width="200" height="90" class="timeline-box" />
+  <text x="530" y="60" class="timeline-text timeline-title">Parker Aerospace (2012-2016)</text>
+  <text x="530" y="80" class="timeline-text">
+    <tspan x="530" dy="0">Led enterprise data harmonization</tspan>
+    <tspan x="530" dy="15">initiatives, improving consistency.</tspan>
+  </text>
 
   <!-- 5) Downward stem - Anaheim Police Dept -->
-  <circle cx="730" cy="150" r="5" fill="#999" />
-  <line x1="730" y1="150" x2="730" y2="180" stroke="#999" stroke-width="3" stroke-linecap="round" />
-  <circle cx="730" cy="180" r="25" fill="#f8f9fa" stroke="#ddd" stroke-width="1" />
-  <image href="/images/APD (50x50).png" x="705" y="155" width="50" height="50" />
+  <circle cx="730" cy="170" r="5" fill="#999" />
+  <line x1="730" y1="170" x2="730" y2="200" stroke="#999" stroke-width="3" stroke-linecap="round" />
+  <image x="705" y="175" width="50" height="50" xlink:href="../../images/APD-50x50.png" clip-path="url(#circleClip)" />
   
-  <!-- APD text box -->
-  <rect x="660" y="220" width="200" height="70" class="timeline-box" />
-  <text x="670" y="240" class="timeline-text timeline-title">Anaheim Police Dept.</text>
-  <text x="670" y="260" class="timeline-text">Utilized technology and video</text>
-  <text x="670" y="275" class="timeline-text">surveillance to assist the FBI.</text>
+  <!-- APD text box - Increased width and height -->
+  <rect x="650" y="240" width="250" height="110" class="timeline-box" />
+  <text x="660" y="260" class="timeline-text timeline-title">Anaheim Police Dept. (2007-2012)</text>
+  <text x="660" y="280" class="timeline-text">
+    <tspan x="660" dy="0">Utilized technology and video surveillance</tspan>
+    <tspan x="660" dy="15">to assist the FBI in investigations.</tspan>
+  </text>
 </svg>
