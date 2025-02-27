@@ -38,6 +38,23 @@
   word-wrap: break-word; /* Legacy support */
 }
 
+/* Fix for text overflowing in timeline boxes */
+.timeline-box {
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure text in timeline boxes doesn't overflow */
+.career-timeline rect {
+  overflow: hidden;
+}
+
+.career-timeline text {
+  font-size: 12px;
+  word-break: break-word;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .career-timeline {
@@ -67,9 +84,4 @@
   .career-timeline {
     margin: 1.5rem 0;
   }
-}
-
-/* Ensure icons are properly centered and visible */
-.timeline-svg image {
-  transform-origin: center;
 }
