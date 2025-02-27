@@ -41,6 +41,7 @@
 @import "syntax";
 @import "theme/dark";       /* If you want to provide a dark theme or references */
 @import "theme/default";    /* We load default again to ensure final variables */
+@import "custom/_mobile";   /* Mobile-specific styles */
 
 /* 4. OVERRIDES: style changes to modernize the look (Apple-inspired) */
 
@@ -60,17 +61,16 @@ body {
 
 /* Masthead: bigger, cleaner, pinned with minimal lines */
 .masthead {
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-bottom: 1px solid #e2e2e2;
+  position: fixed;
+  min-height: auto;
+  height: $masthead-height;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-border-color);
+  z-index: 20;
 
   &__inner-wrap {
     /* Increase top & bottom padding for an airy feel */
-    padding: 1.5em 1em;
+    padding: 1em 1em;
   }
 
   a {
@@ -93,11 +93,16 @@ body {
 
 /* Priority nav button (the hamburger) */
 .greedy-nav button {
-  background-color: #007aff;   /* Apple-like blue */
-  color: #fff;
-  border-radius: 6px;
+  background: none;
+  color: var(--global-text-color);
+  border-radius: 0;
+  
+  .navicon, .navicon::before, .navicon::after {
+    background: var(--global-text-color);
+  }
+  
   &:hover {
-    background-color: #005bb5;
+    background: none;
   }
 }
 

@@ -1,0 +1,205 @@
+/* ==========================================================================
+   RESPONSIVE STYLES FOR MOBILE, TABLET, AND SMALLER LAPTOPS
+   ========================================================================== */
+
+/* Common styles for both mobile and tablet views */
+.greedy-nav {
+  button {
+    transition: all 0.3s ease;
+    
+    .navicon, 
+    .navicon::before, 
+    .navicon::after {
+      transition: all 0.3s ease;
+    }
+  }
+  
+  /* Animation classes for menu transitions */
+  .hidden-links {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top center;
+    
+    &.menu-entering {
+      opacity: 0;
+      transform: translateY(-10px) scaleY(0.95);
+    }
+    
+    &.menu-visible {
+      opacity: 1;
+      transform: translateY(0) scaleY(1);
+    }
+    
+    &.menu-exiting {
+      opacity: 0;
+      transform: translateY(-10px) scaleY(0.95);
+    }
+  }
+}
+
+/* Tablet and smaller laptop styles (601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .tablet-view {
+    .masthead {
+      &__inner-wrap {
+        padding: 0.75em 1.25em;
+      }
+    }
+    
+    .greedy-nav {
+      button {
+        padding: 0.75rem;
+        margin-right: 0;
+        display: block;
+        
+        .navicon {
+          width: 1.5rem;
+          
+          &::before,
+          &::after {
+            width: 1.5rem;
+          }
+        }
+      }
+      
+      .visible-links {
+        li:not(.masthead__menu-item--lg) {
+          display: none;
+        }
+      }
+      
+      .hidden-links {
+        width: 220px;
+        right: 0;
+        left: auto;
+        top: $masthead-height;
+        border: 1px solid var(--global-border-color);
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background: var(--global-bg-color);
+        
+        li {
+          a {
+            padding: 0.75rem 1.25rem;
+            font-size: 1em;
+            display: block;
+            width: 100%;
+            transition: background 0.2s ease;
+            
+            &:hover {
+              background: rgba(0,0,0,0.03);
+            }
+          }
+          
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile styles (up to 600px) */
+@media (max-width: 600px) {
+  // Masthead adjustments
+  .masthead {
+    &__inner-wrap {
+      padding: 0.75em 1em;
+    }
+  }
+  
+  // Improve tap targets for mobile
+  .greedy-nav {
+    a {
+      padding: 0.5rem 0;
+      margin: 0 0.5rem;
+    }
+    
+    .visible-links {
+      li {
+        margin-right: 0.5rem;
+      }
+      
+      .masthead__menu-item--lg {
+        a {
+          font-size: 1.1em;
+        }
+      }
+    }
+    
+    button {
+      padding: 0.75rem;
+      margin-right: 0;
+      
+      .navicon {
+        width: 1.25rem;
+        
+        &::before,
+        &::after {
+          width: 1.25rem;
+        }
+      }
+    }
+  }
+  
+  // Ensure dropdown menu is usable on mobile
+  .hidden-links {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: $masthead-height;
+    border-top: 1px solid var(--global-border-color);
+    border-radius: 0;
+    background: var(--global-bg-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    li {
+      a {
+        padding: 0.75rem 1rem;
+        font-size: 1.1em;
+        display: block;
+        width: 100%;
+        transition: background 0.2s ease;
+        
+        &:hover {
+          background: rgba(0,0,0,0.03);
+        }
+      }
+      
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+    }
+  }
+  
+  // Adjust page content for mobile
+  .page__content {
+    h2 {
+      margin-top: 1.5em;
+    }
+    
+    p, li {
+      font-size: 0.95em;
+    }
+  }
+}
+
+// Fix for iOS Safari overscroll behavior
+html {
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  
+  @media (max-width: 900px) {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+// Improve touch interactions
+@media (max-width: 900px) {
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
