@@ -7,6 +7,22 @@
     <clipPath id="circleClip">
       <circle cx="25" cy="25" r="25" />
     </clipPath>
+    <!-- Clip paths for company logos -->
+    <clipPath id="clipStripe">
+      <circle cx="170" cy="170" r="15" />
+    </clipPath>
+    <clipPath id="clipKantata">
+      <circle cx="310" cy="170" r="15" />
+    </clipPath>
+    <clipPath id="clipMavenlink">
+      <circle cx="450" cy="170" r="15" />
+    </clipPath>
+    <clipPath id="clipParker">
+      <circle cx="590" cy="170" r="15" />
+    </clipPath>
+    <clipPath id="clipAPD">
+      <circle cx="730" cy="170" r="15" />
+    </clipPath>
     <style>
       .timeline-text {
         font-family: 'Helvetica', Arial, sans-serif;
@@ -52,7 +68,15 @@
   <line x1="100" y1="170" x2="800" y2="170" stroke="#999" stroke-width="3" stroke-linecap="round" marker-start="url(#arrowLeft)" />
 
   <!-- 1) Downward stem - Stripe -->
-  <circle cx="170" cy="170" r="15" fill="#635BFF" /> <!-- Stripe purple -->
+  <circle cx="170" cy="170" r="15" fill="#635BFF" fill-opacity="0.7" /> <!-- Stripe purple background -->
+  <image
+    x="155"
+    y="155"
+    width="30"
+    height="30"
+    xlink:href="../../images/stripe-50x50.png"
+    clip-path="url(#clipStripe)"
+  />
   <line x1="170" y1="170" x2="170" y2="200" stroke="#999" stroke-width="3" stroke-linecap="round" />
   
   <!-- Stripe text box - Increased height -->
@@ -64,7 +88,15 @@
   </text>
 
   <!-- 2) Upward stem - Kantata -->
-  <circle cx="310" cy="170" r="15" fill="#F26522" /> <!-- Kantata orange -->
+  <circle cx="310" cy="170" r="15" fill="#F26522" fill-opacity="0.7" /> <!-- Kantata orange background -->
+  <image
+    x="295"
+    y="155"
+    width="30"
+    height="30"
+    xlink:href="../../images/kantata-50x50.png"
+    clip-path="url(#clipKantata)"
+  />
   <line x1="310" y1="170" x2="310" y2="140" stroke="#999" stroke-width="3" stroke-linecap="round" />
   
   <!-- Kantata text box - Increased height -->
@@ -76,7 +108,15 @@
   </text>
 
   <!-- 3) Downward stem - Mavenlink -->
-  <circle cx="450" cy="170" r="15" fill="#5D3FD3" /> <!-- Mavenlink purple -->
+  <circle cx="450" cy="170" r="15" fill="#5D3FD3" fill-opacity="0.7" /> <!-- Mavenlink purple background -->
+  <image
+    x="435"
+    y="155"
+    width="30"
+    height="30"
+    xlink:href="../../images/mavenlink-50x50.jpg"
+    clip-path="url(#clipMavenlink)"
+  />
   <line x1="450" y1="170" x2="450" y2="200" stroke="#999" stroke-width="3" stroke-linecap="round" />
   
   <!-- Mavenlink text box - Increased height -->
@@ -88,7 +128,15 @@
   </text>
 
   <!-- 4) Upward stem - Parker Aerospace -->
-  <circle cx="590" cy="170" r="15" fill="#0066CC" /> <!-- Parker blue -->
+  <circle cx="590" cy="170" r="15" fill="#0066CC" fill-opacity="0.7" /> <!-- Parker blue background -->
+  <image
+    x="575"
+    y="155"
+    width="30"
+    height="30"
+    xlink:href="../../images/parker-50x50.png"
+    clip-path="url(#clipParker)"
+  />
   <line x1="590" y1="170" x2="590" y2="140" stroke="#999" stroke-width="3" stroke-linecap="round" />
   
   <!-- Parker text box - Increased height -->
@@ -100,7 +148,15 @@
   </text>
 
   <!-- 5) Downward stem - Anaheim Police Dept -->
-  <circle cx="730" cy="170" r="15" fill="#003366" /> <!-- APD blue -->
+  <circle cx="730" cy="170" r="15" fill="#003366" fill-opacity="0.7" /> <!-- APD blue background -->
+  <image
+    x="715"
+    y="155"
+    width="30"
+    height="30"
+    xlink:href="../../images/APD-50x50.png"
+    clip-path="url(#clipAPD)"
+  />
   <line x1="730" y1="170" x2="730" y2="200" stroke="#999" stroke-width="3" stroke-linecap="round" />
   
   <!-- APD text box - Increased width and height -->
