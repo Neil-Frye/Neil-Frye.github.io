@@ -70,7 +70,9 @@ redirect_from:
 
     <!-- HORIZONTAL TIMELINE START -->
     <div class="career-timeline">
-      <img src="/assets/images/timeline.svg" alt="Career Timeline showing professional experience at Stripe, Kantata, Mavenlink, Parker Aerospace, and Anaheim Police Department" class="timeline-svg" />
+      <object type="image/svg+xml" data="/assets/images/timeline.svg" class="timeline-svg" style="width: 100%; height: auto;">
+        <img src="/assets/images/timeline.svg" alt="Career Timeline showing professional experience at Stripe, Kantata, Mavenlink, Parker Aerospace, and Anaheim Police Department" class="timeline-svg" />
+      </object>
     </div>
     <!-- HORIZONTAL TIMELINE END -->
 
