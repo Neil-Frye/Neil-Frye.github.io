@@ -111,6 +111,7 @@
           background-color: var(--global-link-color);
           transform: scaleX(0);
           transition: transform 0.3s ease;
+          transform-origin: center;
         }
       }
       

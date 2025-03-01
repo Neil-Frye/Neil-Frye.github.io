@@ -86,35 +86,10 @@ body {
 
 /* Menu items spacing & hover style */
 .masthead__menu-item {
-  margin: 0 1em;
+  margin: 0;
   &--lg {
     padding-right: 2em;
     font-weight: 600;
-  }
-}
-
-/* Priority nav button (the hamburger) */
-.greedy-nav button {
-  background: none;
-  color: var(--global-text-color);
-  border-radius: 0;
-  
-  .navicon, .navicon::before, .navicon::after {
-    background: var(--global-text-color);
-  }
-  
-  &:hover {
-    background: none;
-  }
-  
-  /* Mobile menu button text override */
-  @media (max-width: 900px) {
-    font-size: 0 !important;
-    color: transparent !important;
-    width: 44px !important;
-    height: 44px !important;
-    padding: 0.75rem !important;
-    position: relative !important;
   }
 }
 

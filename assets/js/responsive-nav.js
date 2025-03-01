@@ -12,6 +12,8 @@
     const $mobileOverlay = document.querySelector('.mobile-nav-overlay');
     const $visibleLinks = document.querySelector('.visible-links');
     const $masthead = document.querySelector('.masthead');
+    const $mobileNavContainer = document.querySelector('.mobile-nav-container');
+    const $mobileNavItems = document.querySelectorAll('.mobile-nav-item');
     
     // Breakpoints for different device sizes
     const MOBILE_BREAKPOINT = 600;
@@ -43,12 +45,10 @@
         // Switch to mobile menu
         document.body.classList.add('mobile-menu-active');
         $toggleBtn.style.display = 'flex';
-        $visibleLinks.style.display = 'none';
       } else {
         // Switch to desktop menu
         document.body.classList.remove('mobile-menu-active');
         $toggleBtn.style.display = 'none';
-        $visibleLinks.style.display = 'flex';
         
         // Ensure mobile menu is closed
         if ($mobileOverlay.classList.contains('is-visible')) {
@@ -68,6 +68,22 @@
         $mobileOverlay.classList.add('is-visible');
         document.body.classList.add('menu-open');
         
+        // Animate mobile nav container
+        if ($mobileNavContainer) {
+          $mobileNavContainer.style.transform = 'translateY(0)';
+          $mobileNavContainer.style.opacity = '1';
+        }
+        
+        // Animate mobile nav items with staggered delay
+        if ($mobileNavItems) {
+          $mobileNavItems.forEach((item, index) => {
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'translateX(0)';
+            }, 50 + (index * 50));
+          });
+        }
+        
         // Prevent background scrolling
         document.body.style.overflow = 'hidden';
       } else {
@@ -76,6 +92,20 @@
         $toggleBtn.classList.remove('is-active');
         $mobileOverlay.classList.remove('is-visible');
         document.body.classList.remove('menu-open');
+        
+        // Reset mobile nav container animation
+        if ($mobileNavContainer) {
+          $mobileNavContainer.style.transform = 'translateY(20px)';
+          $mobileNavContainer.style.opacity = '0';
+        }
+        
+        // Reset mobile nav items animation
+        if ($mobileNavItems) {
+          $mobileNavItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-10px)';
+          });
+        }
         
         // Restore scrolling
         document.body.style.overflow = '';
@@ -143,5 +173,22 @@
     
     // Initial setup
     checkMenuOverflow();
+    
+    // Set initial styles for mobile nav container and items
+    if ($mobileNavContainer) {
+      $mobileNavContainer.style.transform = 'translateY(20px)';
+      $mobileNavContainer.style.opacity = '0';
+      $mobileNavContainer.style.transition = 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease';
+      $mobileNavContainer.style.transitionDelay = '0.1s';
+    }
+    
+    if ($mobileNavItems) {
+      $mobileNavItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateX(-10px)';
+        item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        item.style.transitionDelay = `${0.05 + (index * 0.05)}s`;
+      });
+    }
   });
 })();
