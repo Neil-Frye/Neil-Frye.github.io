@@ -4,21 +4,68 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        <!-- Site title/logo -->
+        <div class="site-title">
+          <a href="{{ base_path }}/" class="site-logo">{{ site.title }}</a>
+        </div>
+        
+        <!-- Desktop navigation -->
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" {% if link.external %}target="_blank" rel="noopener"{% endif %}>{{ link.title }}</a></li>
+            
+            {% assign current = nil %}
+            {% if page.url == link.url %}
+              {% assign current = 'current' %}
+            {% endif %}
+            
+            <li class="masthead__menu-item {% if current %}active{% endif %}">
+              <a href="{{ domain }}{{ link.url }}" {% if link.external %}target="_blank" rel="noopener"{% endif %} {% if current %}aria-current="page"{% endif %}>
+                {{ link.title }}
+              </a>
+            </li>
           {% endfor %}
         </ul>
-        <button class="hidden" aria-label="Toggle menu">
-          <div class="navicon"></div>
+        
+        <!-- Mobile menu toggle button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="menu-icon">
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line"></span>
+          </span>
+          <span class="sr-only">Menu</span>
         </button>
-        <ul class="hidden-links hidden"></ul>
+        
+        <!-- Mobile navigation overlay -->
+        <div class="mobile-nav-overlay">
+          <div class="mobile-nav-container">
+            <ul class="mobile-nav-links">
+              {% for link in site.data.navigation.main %}
+                {% if link.url contains 'http' %}
+                  {% assign domain = '' %}
+                {% else %}
+                  {% assign domain = base_path %}
+                {% endif %}
+                
+                {% assign current = nil %}
+                {% if page.url == link.url %}
+                  {% assign current = 'current' %}
+                {% endif %}
+                
+                <li class="mobile-nav-item {% if current %}active{% endif %}">
+                  <a href="{{ domain }}{{ link.url }}" {% if link.external %}target="_blank" rel="noopener"{% endif %} {% if current %}aria-current="page"{% endif %}>
+                    {{ link.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </div>

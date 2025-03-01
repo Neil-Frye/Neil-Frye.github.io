@@ -42,6 +42,8 @@
 @import "theme/dark";       /* If you want to provide a dark theme or references */
 @import "theme/default";    /* We load default again to ensure final variables */
 @import "custom/_mobile";   /* Mobile-specific styles */
+@import "custom/_mobile_menu";   /* Mobile menu styles */
+@import "custom/_responsive_nav";   /* Responsive navigation styles */
 
 /* 4. OVERRIDES: style changes to modernize the look (Apple-inspired) */
 
@@ -103,6 +105,16 @@ body {
   
   &:hover {
     background: none;
+  }
+  
+  /* Mobile menu button text override */
+  @media (max-width: 900px) {
+    font-size: 0 !important;
+    color: transparent !important;
+    width: 44px !important;
+    height: 44px !important;
+    padding: 0.75rem !important;
+    position: relative !important;
   }
 }
 

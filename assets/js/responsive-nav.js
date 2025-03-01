@@ -1,6 +1,7 @@
 /**
- * Modern mobile navigation system
- * Provides a professional slide-out menu experience on mobile devices
+ * Responsive Navigation System
+ * Dynamically adapts the navigation menu based on screen size
+ * Provides smooth transitions between desktop and mobile views
  */
 (function() {
   // Wait for DOM to be ready
@@ -19,16 +20,40 @@
     // Check if required elements exist
     if (!$nav || !$toggleBtn || !$mobileOverlay || !$visibleLinks) return;
     
-    // Function to set device-specific classes
-    function setDeviceClass() {
-      if (window.innerWidth <= MOBILE_BREAKPOINT) {
-        document.body.classList.add('mobile-view');
-        document.body.classList.remove('tablet-view');
-      } else if (window.innerWidth <= TABLET_BREAKPOINT) {
-        document.body.classList.add('tablet-view');
-        document.body.classList.remove('mobile-view');
+    // Function to check if menu items fit in the available space
+    function checkMenuOverflow() {
+      // Get the available width for the menu
+      const navWidth = $nav.clientWidth;
+      const logoWidth = $nav.querySelector('.site-title').offsetWidth;
+      const toggleBtnWidth = $toggleBtn.offsetWidth;
+      const availableWidth = navWidth - logoWidth - toggleBtnWidth - 20; // 20px buffer
+      
+      // Calculate the width of all menu items
+      let menuItemsWidth = 0;
+      const menuItems = $visibleLinks.querySelectorAll('li');
+      menuItems.forEach(item => {
+        menuItemsWidth += item.offsetWidth;
+      });
+      
+      // Determine if menu items fit
+      const menuOverflows = menuItemsWidth > availableWidth;
+      
+      // Update the UI based on overflow status
+      if (menuOverflows || window.innerWidth <= TABLET_BREAKPOINT) {
+        // Switch to mobile menu
+        document.body.classList.add('mobile-menu-active');
+        $toggleBtn.style.display = 'flex';
+        $visibleLinks.style.display = 'none';
       } else {
-        document.body.classList.remove('mobile-view', 'tablet-view');
+        // Switch to desktop menu
+        document.body.classList.remove('mobile-menu-active');
+        $toggleBtn.style.display = 'none';
+        $visibleLinks.style.display = 'flex';
+        
+        // Ensure mobile menu is closed
+        if ($mobileOverlay.classList.contains('is-visible')) {
+          toggleMobileMenu();
+        }
       }
     }
     
@@ -67,7 +92,7 @@
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-item a');
     mobileNavLinks.forEach(link => {
       link.addEventListener('click', function() {
-        if (window.innerWidth <= TABLET_BREAKPOINT) {
+        if (document.body.classList.contains('mobile-menu-active')) {
           toggleMobileMenu();
         }
       });
@@ -91,20 +116,19 @@
     });
     
     // Handle window resize
+    let resizeTimeout;
     window.addEventListener('resize', function() {
-      setDeviceClass();
-      
-      // Close mobile menu if window is resized to desktop
-      if (
-        window.innerWidth > TABLET_BREAKPOINT && 
-        $mobileOverlay.classList.contains('is-visible')
-      ) {
-        toggleMobileMenu();
-      }
+      // Debounce the resize event
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function() {
+        checkMenuOverflow();
+      }, 100);
     });
     
     // Handle orientation change
-    window.addEventListener('orientationchange', setDeviceClass);
+    window.addEventListener('orientationchange', function() {
+      setTimeout(checkMenuOverflow, 100);
+    });
     
     // Add scroll shadow effect to masthead
     if ($masthead) {
@@ -118,6 +142,6 @@
     }
     
     // Initial setup
-    setDeviceClass();
+    checkMenuOverflow();
   });
 })();
