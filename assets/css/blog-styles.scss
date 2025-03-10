@@ -4,85 +4,148 @@
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   
   h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 3.2rem;
+    font-weight: 800;
     margin-bottom: 1.5rem;
-    line-height: 1.2;
-    color: #2c3e50;
+    line-height: 1.1;
+    color: #1a1a1a;
+    letter-spacing: -0.03em;
   }
   
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 3rem 0 1.5rem;
+    color: #2c3e50;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
     font-weight: 600;
     margin: 2rem 0 1rem;
     color: #34495e;
   }
   
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin: 1.5rem 0 0.75rem;
-    color: #34495e;
-  }
-  
   p {
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
     color: #4a5568;
+    line-height: 1.7;
   }
   
   blockquote {
     border-left: 4px solid #3498db;
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
+    padding: 1.5rem;
+    margin: 2rem 0;
     background: #f8f9fa;
     font-style: italic;
     color: #2c3e50;
+    border-radius: 6px;
     
     p {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
+      line-height: 1.6;
     }
   }
   
   ul, ol {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    padding-left: 2rem;
     
     li {
-      margin-bottom: 0.5rem;
-      line-height: 1.5;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+      padding-left: 0.5rem;
+      
+      &::marker {
+        color: #3498db;
+      }
     }
   }
   
   img {
     max-width: 100%;
     height: auto;
-    margin: 1.5rem 0;
-    border-radius: 8px;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .hero-section {
     text-align: center;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
+    padding: 4rem 2rem;
+    margin: -2rem -2rem 3rem -2rem;
     background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
-    border-radius: 8px;
+    border-radius: 0;
     
     h1 {
       color: white;
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     
     p {
-      font-size: 1.2rem;
-      color: rgba(255, 255, 255, 0.9);
-      max-width: 600px;
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 700px;
       margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+  
+  .section-card {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    
+    h3 {
+      margin-top: 0;
+    }
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #3498db;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: #2980b9;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .icon-list {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+        color: #3498db;
+      }
     }
   }
   
@@ -90,6 +153,6 @@
     border: 0;
     height: 1px;
     background: #e0e0e0;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 }
