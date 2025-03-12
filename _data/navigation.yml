@@ -4,8 +4,8 @@ main:
   - title: "Resume"
     url: /assets/resume.pdf
     external: true
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Projects"
+    url: /projects/
   - title: "Articles"
     url: /articles/
   - title: "Blog Posts"
