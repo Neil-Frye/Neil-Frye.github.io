@@ -3,7 +3,7 @@ layout: post
 title: "Scaling Professional Services Strategy & Ops in the SaaS World"
 date: 2025-03-06
 tags: [professional services, SaaS, strategy, operations, data-driven leadership]
-image: /images/professional-services.jpg
+image: /images/ProServ.png
 css: blog-styles
 ---
 
@@ -13,7 +13,7 @@ css: blog-styles
     <p>Strategies and insights for building high-performing professional services organizations in the SaaS industry</p>
   </div>
 
-  ![Scaling Professional Services](/images/professional-services.jpg)
+  ![Scaling Professional Services](/images/ProServ.png)
 
   <div class="section-card">
     <h2>Seeing the Macro to Drive Micro Execution</h2>
@@ -69,7 +69,7 @@ css: blog-styles
 
     <p>At Stripe, our global Strategy & Ops team was the backbone that allowed professional services leaders to focus on delivering exceptional customer experiences. This meant:</p>
     
-    <ul>
+   <ul>
       <li>Tight integration with sales, customer success, and product teams</li>
       <li>Operational heavy lifting—tracking KPIs, fine-tuning processes, and ensuring org-wide alignment</li>
       <li>Focus on key metrics like utilization, project margins, and time-to-value</li>
