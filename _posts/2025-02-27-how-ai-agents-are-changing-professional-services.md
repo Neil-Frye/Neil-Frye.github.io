@@ -3,7 +3,7 @@ layout: post
 title: "How AI Agents Are Changing Professional Services"
 date: 2025-02-27
 tags: [AI, business strategy, professional services, automation]
-image: /images/netflix-dash.png
+image: /images/agent.png
 css: blog-styles
 ---
 
@@ -13,7 +13,7 @@ css: blog-styles
     <p>The transformative impact of artificial intelligence on consulting and professional services</p>
   </div>
 
-  <img src="/images/netflix-dash.png" alt="AI Technology" style="max-width: 100%; height: auto;">
+  <img src="/images/agent.png" alt="AI Technology" style="max-width: 100%; height: auto;">
 </div>
 
 Artificial Intelligence is revolutionizing the consulting and professional services industry. With the release of ChatGPT 4.5, it's clear that AI-powered automation is no longer a futuristic concept - it's a present reality. The best consultants are already leveraging AI to enhance efficiency, deliver value to clients faster, and remain competitive in an industry where speed and precision matter.
