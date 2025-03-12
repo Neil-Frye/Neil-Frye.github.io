@@ -4,12 +4,14 @@ title: "Netflix Dashboard"
 excerpt: "A data visualization dashboard analyzing Netflix content trends and patterns"
 collection: portfolio
 permalink: /portfolio/netflix-dash
+header:
+  teaser: "/images/netflix-dash.png"
 ---
 
-A data visualization dashboard analyzing Netflix content trends and patterns.
+**Netflix Dashboard**  
+A data visualization dashboard analyzing Netflix content trends and patterns
 
-<img src="/images/netflix-dash.png" alt="Netflix Dashboard Screenshot" width="500" height="300">
-
+<img src="{{ site.baseurl }}/images/netflix-dash.png" alt="Netflix Dashboard Screenshot" width="500" height="300">
 
 This project provides an interactive dashboard for exploring Netflix's content library, including:
 
