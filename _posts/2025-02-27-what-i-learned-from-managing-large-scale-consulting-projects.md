@@ -3,7 +3,7 @@ layout: post
 title: "What I Learned from Managing Large-Scale Consulting Projects"
 date: 2025-02-27
 tags: [consulting, project management, professional services, SaaS]
-image: /images/image-alignment-300x200.jpg
+image: /images/project.png
 css: blog-styles
 ---
 
@@ -13,7 +13,7 @@ css: blog-styles
     <p>Key insights and best practices from hundreds of high-stakes professional services engagements</p>
   </div>
 
-  <img src="/images/image-alignment-300x200.jpg" alt="Project Management" style="max-width: 100%; height: auto;">
+  <img src="/images/project.png" alt="Project Management" style="max-width: 100%; height: auto;">
 </div>
 
 Over the years, I've worked on hundreds of high-stakes consulting projects, navigating client expectations, operational efficiencies, and the common pitfalls that come with professional services. Managing these projects successfully requires a strong foundation of trust, clear communication, knowing when to say no, and focusing on efficiency. Here are the lessons I've learned along the way.

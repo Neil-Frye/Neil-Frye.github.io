@@ -3,7 +3,7 @@ layout: post
 title: "AI Agents in Tech Consulting and SaaS: Transforming Professional Services"
 date: 2025-02-13
 tags: [AI, tech consulting, SaaS, professional services, automation]
-image: /images/image-alignment-150x150.jpg
+image: /images/agents.png
 css: blog-styles
 ---
 
@@ -13,7 +13,7 @@ css: blog-styles
     <p>How artificial intelligence is reshaping the landscape of professional services and SaaS implementation</p>
   </div>
 
-  <img src="/images/image-alignment-150x150.jpg" alt="AI in Tech Consulting" style="max-width: 100%; height: auto;">
+  <img src="/images/agents.png" alt="AI in Tech Consulting" style="max-width: 100%; height: auto;">
 </div>
 
 ## The Rise of AI Agents in Professional Services

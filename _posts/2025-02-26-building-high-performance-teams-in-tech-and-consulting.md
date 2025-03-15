@@ -3,7 +3,7 @@ layout: post
 title: "Building High-Performance Teams in Tech and Consulting"
 date: 2025-02-26
 tags: [leadership, team building, professional services, AI, automation]
-image: /images/500x300.png
+image: /images/hpt.jpg
 css: blog-styles
 ---
 
@@ -13,7 +13,7 @@ css: blog-styles
     <p>Strategies for creating and leading teams that consistently deliver exceptional results</p>
   </div>
 
-  <img src="/images/500x300.png" alt="High-Performance Teams" style="max-width: 100%; height: auto;">
+  <img src="/images/hpt.jpg" alt="High-Performance Teams" style="max-width: 100%; height: auto;">
 </div>
 
 In today's fast-paced tech and consulting industries, high-performing teams are the backbone of innovation and execution. But what separates an average team from an elite, high-functioning one? Through my experience leading professional services teams, I've found that success hinges on a few fundamental principles: a commitment to learning, proactive problem-solving, effective communication, strategic use of AI, and a deep sense of team ownership.

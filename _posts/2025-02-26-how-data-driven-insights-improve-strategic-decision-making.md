@@ -3,7 +3,7 @@ layout: post
 title: "How Data-Driven Insights Improve Strategic Decision Making"
 date: 2025-02-26
 tags: [data analytics, business intelligence, decision making, professional services]
-image: /images/image-alignment-580x300.jpg
+image: /images/insights.jpg
 css: blog-styles
 ---
 
@@ -13,7 +13,7 @@ css: blog-styles
     <p>Leveraging analytics to drive better business outcomes in professional services</p>
   </div>
 
-  <img src="/images/image-alignment-580x300.jpg" alt="Data Analytics Dashboard" style="max-width: 100%; height: auto;">
+  <img src="/images/insights.jpg" alt="Data Analytics Dashboard" style="max-width: 100%; height: auto;">
 </div>
 
 Data is at the core of every successful business strategy. Whether you are running a consulting project or leading a professional services team, leveraging data effectively can mean the difference between profitability and loss, efficiency and waste, and ultimately, success and failure.
